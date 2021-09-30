@@ -54,12 +54,18 @@ int main() {
   printf("Decimal: %hhx\u", cp);
   
   printf("\nIncremented");
-  cp++;
+  cp[0]++;
+  cp[1]++;
+  cp[2]++;
+  cp[3]++;
   printf("Hex: %hhx\n", cp);
   printf("Decimal: %hhx\u", cp);
   
   printf("\nIncremented By 16");
-  cp+= 16;
+  cp[0]+= 16;
+  cp[1]+= 16;
+  cp[2]+= 16;
+  cp[3]+= 16;
   printf("Hex: %hhx\n", cp);
   printf("Decimal: %hhx\u", cp);
   return 0;
